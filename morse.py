@@ -53,7 +53,7 @@ if __name__ == '__main__':
         print("\n===================================================")
         print("                     Morse translator")
         print("===================================================")
-        print("  [1] - Texto too Morse")
+        print("  [1] - Text to Morse")
         print("  [2] - Morse to text")
         print("  [exit]")
         print("===================================================")
