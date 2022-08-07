@@ -4,14 +4,16 @@ def text_to_hexa():
 
     text = input("\nType text: ")
 
+    print("\nHexadecimal code:")
     for c in list(text):
         print(str(hex(ord(c)))[2:], end=" ")
 
 
 
 def hexa_to_text():
-    hexatext = input("\nType text: ")
+    hexatext = input("\nType Hexadecimal code: ")
 
+    print("\nText:")
     for c in list(hexatext.split()):
         print(chr(int(c, 16)), end="")
 
@@ -25,7 +27,7 @@ if __name__ == '__main__':
 
 
 
-        print("\n===================================================")
+        print("\n\n===================================================")
         print("                   Hexadecimal translator")
         print("===================================================")
         print("  [1] - Text to Hexadecimal")
