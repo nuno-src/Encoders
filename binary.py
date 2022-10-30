@@ -1,22 +1,25 @@
 
 
 def text_to_binary():
-    while True:
+    user_input = ""
+    while user_input != "0":
 
         user_input = input("\nType text: ")
 
-        binary_converted = ''.join(format(ord(i), '08b') for i in user_input)
+        binary_converted = ' '.join(format(ord(i), '08b') for i in user_input)
 
         print(str(binary_converted))
 
 
 
 def binary_to_text():
-    while True:
+    user_input = ""
+    while user_input != "0":
 
         user_input = input("\nType binary code: ")
 
-        text = ''.join(format(ord(i), 'g') for i in user_input)
+        # text = ''.join(format(ord(i), 'g') for i in user_input)
+        text = "".join(chr(int(c, 2)) for c in user_input.split(" "))
 
         print(str(text))
 
