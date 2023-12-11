@@ -6,7 +6,7 @@ def text_to_hexa():
 
     print("\nHexadecimal code:")
     for c in list(text):
-        print(str(hex(ord(c)))[2:].upper(), end=" ")
+        print(str(hex(ord(c)))[2:].upper(), end=" ") # [2:0] -> remove o 0x
 
 
 

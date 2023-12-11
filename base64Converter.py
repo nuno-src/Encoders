@@ -47,13 +47,13 @@ def base64t_to_img():
         print("Erro!!! - mensagem muito grande")
         
     else:
-        pass
+        #pass
     #print(data)
 
-    with open("file.png", "wb") as f:
-        f.write(data)
+        with open("file.png", "wb") as f:
+            f.write(data)
 
-    print("\n Complete!")
+        print("\n Complete!")
     
     
     
